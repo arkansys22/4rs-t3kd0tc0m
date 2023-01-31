@@ -606,7 +606,7 @@ PAGE JS
     $('.countdown_time').each(function() {
         var endTime = $(this).data('time');
         $(this).countdown(endTime, function(tm) {
-            $(this).html(tm.strftime('<span class="countdown_box"><span class="countdown days">%D </span><span class="cd_text">Days</span></span><span class="countdown_box"><span class="countdown hours">%H</span><span class="cd_text">Hours</span></span><span class="countdown_box"><span class="countdown minutes">%M</span><span class="cd_text">Minutes</span></span><span class="countdown_box"><span class="countdown seconds">%S</span><span class="cd_text">Seconds</span></span>'));
+            $(this).html(tm.strftime('<span class="countdown_box"><span class="countdown days">%D </span><span class="cd_text">Hari</span></span><span class="countdown_box"><span class="countdown hours">%H</span><span class="cd_text">Jam</span></span><span class="countdown_box"><span class="countdown minutes">%M</span><span class="cd_text">Menit</span></span><span class="countdown_box"><span class="countdown seconds">%S</span><span class="cd_text">Detik</span></span>'));
         });
     });
 
