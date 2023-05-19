@@ -451,7 +451,7 @@
     <section class="cta_section_small bg_blue px-0">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-8 text_white animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                <div class="col-md-8 text_white animation" data-animation="fadeInUp" data-animation-delay="0.1s">
                     <h2 class="">Tim Arsatek Siap Membantu Anda</h2>
                     <p class="mb-md-0">Kami mengerti membuat website bukanlah keputusan mudah. Oleh karena itu, kami siap membantu Anda untuk menemukan pilihan terbaik yang sesuai dengan budget dan tujuan Anda. Hubungi kami untuk berkonsultasi.</p>
                     <br>
