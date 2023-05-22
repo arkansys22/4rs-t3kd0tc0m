@@ -259,7 +259,7 @@
                                     <?php foreach ($services as $post_services) {  ?>
                                         <div class="col-md-3 mb-md-5 mb-4" >
                                             <div class="pricing_box pricing_style2 animation" data-animation="flipInY" data-animation-delay="0.2s">
-                                            <?php if($post_services->services_harga_percent ='70') { ?>
+                                            <?php if($post_services->services_harga_percent =='70') { ?>
                                                 <div class="pricing_ribbon">Paling Laris</div>
                                                 <?php }else{?>
                                                 <?php }?>
