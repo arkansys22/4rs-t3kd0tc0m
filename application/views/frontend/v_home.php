@@ -156,7 +156,7 @@
                       Temukan keseruan liburan anda di Komodo & Flores dengan armada yang nyaman dan Driver Handal dari Komodo Transport</p>
                       <p><b>Solusinya Armada Liburan Anda</b>
                     </p> -->
-                    <a href="https://api.whatsapp.com/send/?phone=<?php echo $identitas->whatsapp ?>&text=Hallo+Arsatek.+Saya+tertarik+menjadikan+Arsatek+sebagai+partner+bisnis+saya." class="btn btn-outline-default">HUBUNGI KAMI SEKARANG</a>
+                    <a href="https://api.whatsapp.com/send/?phone=<?php echo $identitas->whatsapp ?>&text=Hallo+Arsatek.+Saya+tertarik+mengembangkan+bisnis+saya+dengan+website+dan+akun+sosial+media.Bisakah+Arsatek+membantu+bisnis+saya?" class="btn btn-outline-default">HUBUNGI KAMI SEKARANG</a>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@
                     <p class="mb-md-0">Website profesional dan akun media sosial adalah salah satu aset investasi untuk bisnis Anda. Percayakan pembuatan website profesional dan pengelolaan akun media sosial Anda kepada Arsatek untuk hasil yang terbaik.</p>
                 </div>
                 <div class="col-md-4 text-md-right animation" data-animation="fadeInUp" data-animation-delay="0.6s">    
-                    <a href="#" class="btn btn-outline-white btn-radius mb-2">Konsultasi Sekarang</a>
+                    <a href="https://api.whatsapp.com/send/?phone=<?php echo $identitas->whatsapp ?>&text=Hallo+Arsatek.+Saya+tertarik+mengembangkan+bisnis+saya+dengan+website+dan+akun+sosial+media.Bisakah+Arsatek+membantu+bisnis+saya?" class="btn btn-outline-white btn-radius mb-2">Konsultasi Sekarang</a>
                 </div>
             </div>
         </div>
@@ -458,7 +458,7 @@
                     <h2 class="">Tim Arsatek Siap Membantu Anda</h2>
                     <p class="mb-md-0">Kami mengerti membuat website bukanlah keputusan mudah. Oleh karena itu, kami siap membantu Anda untuk menemukan pilihan terbaik yang sesuai dengan budget dan tujuan Anda. Hubungi kami untuk berkonsultasi.</p>
                     <br>
-                        <a href="#" class="btn btn-outline-white btn-radius mb-2">Konsultasi Sekarang</a>                
+                        <a href="https://api.whatsapp.com/send/?phone=<?php echo $identitas->whatsapp ?>&text=Hallo+Arsatek.+Saya+tertarik+mengembangkan+bisnis+saya+dengan+website+dan+akun+sosial+media.Bisakah+Arsatek+membantu+bisnis+saya?" class="btn btn-outline-white btn-radius mb-2">Konsultasi Sekarang</a>                
                 </div>              
             </div>
         </div>
