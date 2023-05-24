@@ -48,46 +48,62 @@
   <section class="small_pb">
       <div class="container">
           <div class="row">
-              <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-                <div class="product-image">
-                   <img id="product_img" src='<?php echo base_url()?>bahan/foto_products/<?php echo $posts->services_gambar ?>' data-zoom-image="<?php echo base_url()?>bahan/foto_products/<?php echo $posts->services_gambar ?>"/>
-
-                </div>
+              <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
+                <div class="pricing_box pricing_style2 animation" data-animation="flipInY" data-animation-delay="0.2s">
+                    <div class="pr_title bg-white" style="text-align:left;">
+                        <h4 ><?php echo $posts->services_judul_konten?></h4>
+                        <p><?php echo $posts->services_meta_desk?></p>                                                 
+                     
+                    </div>
+                    <div class="pr_content border-bottom" style="text-align:left;">                                      
+                         <?php echo $posts->services_desk?>
+                    </div>
+                </div>    
               </div>
-              <div class="col-lg-7 col-md-6">
-                  <div class="pr_detail">
-                    <div class="product-description">
-                      <div class="product-title">
-                        <h4><?php echo $posts->services_judul_konten ?></h4>
-                      </div>
-                      <div class="product_price float-left">
-                          <ins>Rp<?php echo number_format($posts->services_harga,0,',','.') ?></ins>
-                      </div>
-                      <div class="product-rate float-right">
-                          <?php echo $cat['products_cat_judul']?>
-                      </div>
-                      <div class="clearfix"></div>
-                      <hr />
-                      <p><?php echo $posts->services_desk ?></p>
+              <div class="col-lg-8 col-md-8 mb-8 mb-md-0"> 
+              <?php $services_sub = $this->Crud_m->view_where_orderings('services_sub1',array('services_sub1_status'=>'publish','services_id_session'=>$posts->services_id_session),'services_sub1_id','ASC'); ?>         
+                    <div class="row">               
+                         
+                        <?php foreach ($services_sub as $services) {  ?>       
+                         <div class="col-lg-4 col-md-3">
+                            <div class="pricing_box pricing_style2 animation" data-animation="flipInY" data-animation-delay="0.2s">
+                              <div class="pr_title bg-white" style="text-align:left;">
+                                  <h3>Diskon <?php echo $services->services_sub1_harga_percent?>%</h3><br>
+                                  <h4 ><?php echo $services->services_sub1_judul_konten?></h4>
+                                  <p><?php echo $services->services_sub1_total_bulan?> Bulan</p>
+                                  <?php $a = $services->services_sub1_harga - ($services->services_sub1_harga * ($services->services_sub1_harga_percent/100))?>
+                                                        <h4>Rp <?php echo number_format($a,0,',','.') ?><span style="font-size:12px;">/ bulan</span></h4>
+                                  <br>Total 
+                                  <?php $b = $a * $services->services_sub1_total_bulan ?>
+                                  <h4>Rp <?php echo number_format($b,0,',','.') ?></h4>
+                                  <?php $c = $services->services_sub1_harga * $services->services_sub1_total_bulan ?>
+                                  <del>Rp <?php echo number_format($c,0,',','.') ?></del>                                                 
+                                  
+                              </div>
+                              <div class="pr_content border-bottom" style="text-align:left;">                                      
+                                   <?php echo $services->services_sub1_desk?>
+                              </div>
+                              <div class="pr_footer text-center" >
+                                    <a href="https://api.whatsapp.com/send/?phone=<?php echo $identitas->whatsapp ?>&text=Hallo+Arsatek.+Saya+ingin+membuat+<?php echo $services->services_sub1_judul_konten?>+untuk+awal+bisnis+saya.+Bisa+bantu+saya+mewujudkannya?.." class="btn btn-outline-default btn-md btn-radius mb-2" >Pilih Paket Ini</a>
+                                  </div>
+                            </div>
+                         </div>
+                        <?php } ?>
+                                            
                     </div>
-                    <hr />
-                    <div>
-                      <div class="cart_btn">
-                        <a class="btn btn-default radius_none btn-addtocart" href="https://api.whatsapp.com/send?phone=<?php echo $identitas->whatsapp?>&text=Hi,%20<?php echo $identitas->nama_website?>.%20I%20want%20rent%20<?php echo $posts->services_judul_konten ?> for <?php echo $cat['products_cat_judul']?>.%20How%20to%20order%20it%20?"><i class="ion-android-cart"></i> ORDER</a>
-
-                      </div>
-                    </div>
+                    
                     <div class="clearfix"></div>
                     <hr />
                     <div class="product_share d-block d-sm-flex align-items-center">
                       <span>Share with:</span>
                         <ul class="list_none social_icons">
-                              <li><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("services/$posts->services_judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("services/$posts->services_judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank""><i class="ion-social-facebook"></i></a></li>
+                            
                               <li><a href="whatsapp://send?text=Find <?php echo $posts->services_judul_konten ?> rental car at <?php echo $identitas->nama_website?> with affordable price Rp<?php echo number_format($posts->services_harga,0,',','.') ?> | please click <?php echo base_url("services/$posts->services_judul_seo ") ?> for more information">
-                              <i class="ion-social-whatsapp"></i></a></li>
+                              <i class="ion-social-whatsapp"></i></a>
+                            </li>
                         </ul>
                     </div>
-                  </div>
+                  
               </div>
           </div>
       </div>

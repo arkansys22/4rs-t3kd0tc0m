@@ -68,7 +68,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-2">
                       <div class="form-group">
                         <label>Persentase Diskon</label>   
                         <div class="input-group mb-3">
@@ -90,7 +90,18 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <label>Durasi</label>
+                        <div class="input-group mb-3">
+                          <input type="number" class="form-control" name="services_sub1_total_bulan" placeholder="12">
+                          <div class="input-group-append">
+                            <span class="input-group-text">Bulan</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                 
                   
                   <div class="row">
                     <div class="col-sm-12">

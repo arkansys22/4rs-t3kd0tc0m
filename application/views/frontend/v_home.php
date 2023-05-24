@@ -282,7 +282,7 @@
                                                    <?php echo $post_services->services_desk?>
                                                 </div>
                                                 <div class="pr_footer" >
-                                                    <a href="#" style="color:blue;">Lihat Fitur Lengkap</a>
+                                                    <a href="<?php echo base_url() ?>layanan/<?php echo $post_services->services_judul_seo?>" style="color:blue;">Lihat Fitur Lengkap</a>
                                                 </div>
                                             </div>
                                         </div>

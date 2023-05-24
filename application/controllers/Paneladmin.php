@@ -4980,6 +4980,7 @@ class Paneladmin extends CI_Controller {
 													'services_sub1_harga'=>$this->db->escape_str($this->input->post('services_sub1_harga')),
 													'services_sub1_harga_percent'=>$this->db->escape_str($this->input->post('services_sub1_harga_percent')),
 													'services_sub1_harga_modal'=>$this->db->escape_str($this->input->post('services_sub1_harga_modal')),
+													'services_sub1_total_bulan'=>$this->db->escape_str($this->input->post('services_sub1_total_bulan')),
 													'services_id_session'=>$this->input->post('services_id_session'),
 													'services_sub1_desk'=>$this->input->post('services_sub1_desk'),
 													'services_sub1_post_hari'=>hari_ini(date('w')),
@@ -4999,6 +5000,7 @@ class Paneladmin extends CI_Controller {
 													'services_sub1_harga'=>$this->db->escape_str($this->input->post('services_sub1_harga')),
 													'services_sub1_harga_percent'=>$this->db->escape_str($this->input->post('services_sub1_harga_percent')),
 													'services_sub1_harga_modal'=>$this->db->escape_str($this->input->post('services_sub1_harga_modal')),
+													'services_sub1_total_bulan'=>$this->db->escape_str($this->input->post('services_sub1_total_bulan')),
 													'services_id_session'=>$this->input->post('services_id_session'),
 													'services_sub1_desk'=>$this->input->post('services_sub1_desk'),
 													'services_sub1_post_hari'=>hari_ini(date('w')),
@@ -5100,6 +5102,7 @@ class Paneladmin extends CI_Controller {
 											'services_sub1_harga'=>$this->db->escape_str($this->input->post('services_sub1_harga')),
 											'services_sub1_harga_percent'=>$this->db->escape_str($this->input->post('services_sub1_harga_percent')),
 											'services_sub1_harga_modal'=>$this->db->escape_str($this->input->post('services_sub1_harga_modal')),
+											'services_sub1_total_bulan'=>$this->db->escape_str($this->input->post('services_sub1_total_bulan')),
 
 											'services_id_session'=>$this->input->post('services_id_session'),
 											'services_sub1_desk'=>$this->input->post('services_sub1_desk'),
@@ -5116,6 +5119,7 @@ class Paneladmin extends CI_Controller {
 											'services_sub1_harga'=>$this->db->escape_str($this->input->post('services_sub1_harga')),
 											'services_sub1_harga_percent'=>$this->db->escape_str($this->input->post('services_sub1_harga_percent')),
 											'services_sub1_harga_modal'=>$this->db->escape_str($this->input->post('services_sub1_harga_modal')),
+											'services_sub1_total_bulan'=>$this->db->escape_str($this->input->post('services_sub1_total_bulan')),
 
 											'services_id_session'=>$this->input->post('services_id_session'),
 											'services_sub1_desk'=>$this->input->post('services_sub1_desk'),
