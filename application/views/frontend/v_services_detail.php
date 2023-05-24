@@ -60,12 +60,12 @@
                     </div>
                 </div>    
               </div>
-              <div class="col-lg-8 col-md-8 mb-8 mb-md-0"> 
+              <div class="col-lg-8 col-md-8 "> 
               <?php $services_sub = $this->Crud_m->view_where_orderings('services_sub1',array('services_sub1_status'=>'publish','services_id_session'=>$posts->services_id_session),'services_sub1_id','ASC'); ?>         
                     <div class="row">               
                          
                         <?php foreach ($services_sub as $services) {  ?>       
-                         <div class="col-lg-4 col-md-3">
+                         <div class="col-lg-4 col-md-4">
                             <div class="pricing_box pricing_style2 animation" data-animation="flipInY" data-animation-delay="0.2s">
                               <div class="pr_title bg-white" style="text-align:left;">
                                   <h3>Diskon <?php echo $services->services_sub1_harga_percent?>%</h3><br>
@@ -92,7 +92,6 @@
                                             
                     </div>
                     
-                    <div class="clearfix"></div>
                     <hr />
                     <div class="product_share d-block d-sm-flex align-items-center">
                       <span>Share with:</span>
