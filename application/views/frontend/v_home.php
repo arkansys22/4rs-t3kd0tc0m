@@ -55,7 +55,7 @@
                             <div class="tk_counter_inner text_white">
                                 <h2 class="animation font-weight-bold" data-animation="fadeInUp" data-animation-delay="0.2s">Mulai Kesukseskan Usaha Dengan Optimalkan Strategi Online Terbaik</h2>
                                 <br>
-                                 <span class="tk_ending_txt animation" data-animation="fadeInUp" data-animation-delay="0.4s">Mayday Sale memberikan penawaran pembuatan website dan sosial media management ! Fitur lengkap, harga terjangkau, serta gratis domain & SSL. Dapatkan segera!        
+                                 <span class="tk_ending_txt animation" data-animation="fadeInUp" data-animation-delay="0.4s">Indonesia Independence Day Sale memberikan penawaran pembuatan website dan sosial media management ! Fitur lengkap, harga terjangkau, serta gratis domain & SSL. Dapatkan segera!        
                                 </span>
                                  <br><br>
                                  <?php $besok = date('Y-m-d', strtotime("+1 day", strtotime(date("Y-m-d")))); ?>
